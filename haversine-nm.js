@@ -77,8 +77,8 @@ function test() {
     var res = exports.haversine(playerDimension, videoDimensions[i]);
 
     if (score <= -1) score = res; 
+    
     if (isLargeEnough(playerDimension, prospect) && (res < score)) {
-      console.log('res', res);
       score = res;
       selected = prospect;
     }
